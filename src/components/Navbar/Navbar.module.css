@@ -1,0 +1,183 @@
+.navbar {
+  width: calc(100% - 80px);
+
+  max-width: 1240px;
+
+  margin: 20px auto 0;
+
+  padding: 18px 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: sticky;
+
+  top: 20px;
+
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid #eeeef5;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.08);
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #111111;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.6px;
+}
+
+.logoIcon {
+  color: #8b5cf6;
+
+  font-size: 26px;
+}
+
+/* Navigation Links */
+
+.links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 38px;
+}
+
+.links a {
+  color: #6b7280;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  color: #111111;
+}
+
+/* Actions */
+
+.actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.login {
+  background: transparent;
+
+  border: none;
+
+  color: #111111;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.login:hover {
+  color: #8b5cf6;
+}
+
+/* CTA */
+
+.cta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 24px;
+
+  border-radius: 999px;
+
+  border: none;
+
+  background: #8b5cf6;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  background: #7c3aed;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.25);
+}
+
+.cta svg {
+  font-size: 16px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .navbar {
+    width: calc(100% - 40px);
+
+    padding: 16px 20px;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    width: calc(100% - 24px);
+
+    margin-top: 12px;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .cta {
+    padding: 10px 18px;
+
+    font-size: 14px;
+  }
+}

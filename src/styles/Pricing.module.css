@@ -1,0 +1,221 @@
+.pricing {
+  width: 100%;
+
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding: 100px 40px;
+}
+
+/* Heading */
+
+.heading {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: 0 auto 70px;
+}
+
+.badge {
+  display: inline-flex;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: #f3f0ff;
+
+  color: #7c3aed;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  margin-bottom: 22px;
+}
+
+.heading h2 {
+  font-size: 52px;
+
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+.heading p {
+  color: #6b7280;
+
+  font-size: 18px;
+}
+
+/* Cards */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+.card {
+  position: relative;
+
+  padding: 36px;
+
+  background: white;
+
+  border: 1px solid #eeeef5;
+
+  border-radius: 28px;
+
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.08);
+}
+
+.featured {
+  border: 2px solid #8b5cf6;
+
+  transform: translateY(-12px);
+}
+
+.popular {
+  position: absolute;
+
+  top: -14px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  padding: 7px 18px;
+
+  border-radius: 999px;
+
+  background: #8b5cf6;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 24px;
+
+  color: #111827;
+
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  min-height: 45px;
+}
+
+.price {
+  margin: 25px 0;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.price span {
+  font-size: 15px;
+
+  font-weight: 400;
+
+  color: #6b7280;
+}
+
+/* Button */
+
+.button {
+  width: 100%;
+
+  padding: 14px;
+
+  border-radius: 999px;
+
+  border: none;
+
+  background: #8b5cf6;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 28px;
+}
+
+.featured .button {
+  background: #111827;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.features div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #4b5563;
+
+  font-size: 14px;
+}
+
+.features svg {
+  color: #8b5cf6;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured {
+    transform: none;
+  }
+
+  .heading h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    padding: 70px 20px;
+  }
+
+  .heading h2 {
+    font-size: 34px;
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "NovaLabs"
+  },
+  {
+    "id": 2,
+    "name": "Vertex AI"
+  },
+  {
+    "id": 3,
+    "name": "Quantum"
+  },
+  {
+    "id": 4,
+    "name": "Orbit"
+  },
+  {
+    "id": 5,
+    "name": "Cloudly"
+  }
+]
