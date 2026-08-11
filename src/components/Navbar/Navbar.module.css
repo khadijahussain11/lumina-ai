@@ -1,32 +1,19 @@
+
 .navbar {
   width: calc(100% - 80px);
-
   max-width: 1240px;
-
   margin: 20px auto 0;
-
   padding: 18px 28px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   position: sticky;
-
   top: 20px;
-
   z-index: 100;
-
   background: rgba(255, 255, 255, 0.85);
-
   backdrop-filter: blur(14px);
-
   border: 1px solid #eeeef5;
-
   border-radius: 18px;
-
   box-shadow: 0 10px 40px rgba(139, 92, 246, 0.08);
 }
 
@@ -34,23 +21,17 @@
 
 .logo {
   display: flex;
-
   align-items: center;
-
   gap: 8px;
-
   color: #111111;
-
   font-size: 24px;
-
   font-weight: 700;
-
   letter-spacing: -0.6px;
+  white-space: nowrap;
 }
 
 .logoIcon {
   color: #8b5cf6;
-
   font-size: 26px;
 }
 
@@ -58,19 +39,14 @@
 
 .links {
   display: flex;
-
   align-items: center;
-
   gap: 38px;
 }
 
 .links a {
   color: #6b7280;
-
   font-size: 15px;
-
   font-weight: 500;
-
   transition: 0.3s ease;
 }
 
@@ -82,25 +58,17 @@
 
 .actions {
   display: flex;
-
   align-items: center;
-
   gap: 20px;
 }
 
 .login {
   background: transparent;
-
   border: none;
-
   color: #111111;
-
   font-size: 15px;
-
   font-weight: 500;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -112,50 +80,37 @@
 
 .cta {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 8px;
-
   padding: 12px 24px;
-
   border-radius: 999px;
-
   border: none;
-
   background: #8b5cf6;
-
   color: white;
-
   font-size: 15px;
-
   font-weight: 600;
-
   cursor: pointer;
-
+  white-space: nowrap;
   transition: 0.3s ease;
 }
 
 .cta:hover {
   background: #7c3aed;
-
   transform: translateY(-2px);
-
   box-shadow: 0 12px 30px rgba(139, 92, 246, 0.25);
 }
 
 .cta svg {
   font-size: 16px;
+  flex-shrink: 0;
 }
 
-/* Responsive */
+/* Tablet */
 
 @media (max-width: 900px) {
   .navbar {
     width: calc(100% - 40px);
-
     padding: 16px 20px;
   }
 
@@ -164,20 +119,68 @@
   }
 }
 
+/* Mobile */
+
 @media (max-width: 500px) {
   .navbar {
-    width: calc(100% - 24px);
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 14px;
+  }
 
-    margin-top: 12px;
+  .logo {
+    font-size: 19px;
+    gap: 5px;
+  }
+
+  .logoIcon {
+    font-size: 21px;
   }
 
   .login {
     display: none;
   }
 
-  .cta {
-    padding: 10px 18px;
+  .actions {
+    gap: 0;
+  }
 
-    font-size: 14px;
+  .cta {
+    padding: 8px 12px;
+    gap: 5px;
+    font-size: 12px;
+    border-radius: 999px;
+  }
+
+  .cta svg {
+    font-size: 13px;
+  }
+}
+
+/* Very Small Screens */
+
+@media (max-width: 360px) {
+  .navbar {
+    width: calc(100% - 16px);
+    padding: 9px 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logoIcon {
+    font-size: 19px;
+  }
+
+  .cta {
+    padding: 7px 10px;
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .cta svg {
+    font-size: 12px;
   }
 }
